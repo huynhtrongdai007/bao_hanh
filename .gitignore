@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Odoo / build artifacts
+*.log
+*.pot
+*.pyc
+
+
+# Windows metadata
+*Zone.Identifier
+*.Zone.Identifier
+*:Zone.Identifier
+Thumbs.db
+Desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+
+# Local envs
+.venv/
+venv/
+env/
+
+# Test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+#md
+*.md

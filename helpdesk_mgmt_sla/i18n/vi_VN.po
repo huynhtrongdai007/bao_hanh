@@ -1,0 +1,538 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* helpdesk_mgmt_sla
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0
+"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: Vietnamese
+"
+"Language: vi
+"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit
+"
+"Plural-Forms: nplurals=1; plural=0;
+"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.inherit_helpdesk_ticket_view_form
+msgid ""
+"<i class=\"fa fa-lg fa-clock-o mx-2\" aria-label=\"SLA Deadline\" "
+"title=\"SLA Deadline\"/>"
+msgstr "<i class=\"fa fa-lg fa-clock-o mx-2\" aria-label=\"Hạn chót SLA\" title=\"Hạn chót SLA\"/>"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_sla_report__state__accomplished
+#: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_ticket_sla__state__accomplished
+msgid "Accomplished"
+msgstr "Đã hoàn thành"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_needaction
+msgid "Action Needed"
+msgstr "Cần xử lý"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__active
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__active
+msgid "Active"
+msgstr "Đang hoạt động"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_ids
+msgid "Activities"
+msgstr "Hoạt động"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Trang trí ngoại lệ hoạt động"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hoạt động"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__sla_ids
+msgid "Applicable SLAs"
+msgstr "SLA áp dụng"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "Apply on"
+msgstr "Áp dụng cho"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "Archive"
+msgstr "Lưu trữ"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.view_helpdesk_sla_search
+msgid "Archived"
+msgstr "Đã lưu trữ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số tệp đính kèm"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__category_ids
+msgid "Categories"
+msgstr "Danh mục"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__color
+msgid "Color"
+msgstr "Màu"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__consumed_time
+msgid "Consumed time"
+msgstr "Thời gian đã dùng"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__partner_id
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__create_uid
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__create_uid
+msgid "Created by"
+msgstr "Tạo bởi"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__create_date
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__create_date
+msgid "Created on"
+msgstr "Tạo vào"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__date
+msgid "Date"
+msgstr "Ngày"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__days
+msgid "Days"
+msgstr "Ngày"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__deadline
+msgid "Deadline"
+msgstr "Hạn chót"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "Description of the policy..."
+msgstr "Mô tả quy tắc..."
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__display_name
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__display_name
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__expected_stage_id
+msgid "Expected Stage"
+msgstr "Giai đoạn kỳ vọng"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__expired
+#: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_sla_report__state__expired
+#: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_ticket_sla__state__expired
+msgid "Expired"
+msgstr "Đã quá hạn"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__domain
+msgid "Filter"
+msgstr "Bộ lọc"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Biểu tượng Font Awesome, ví dụ fa-tasks"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.actions.act_window,name:helpdesk_mgmt_sla.action_helpdesk_sla_tree
+#: model:ir.model,name:helpdesk_mgmt_sla.model_helpdesk_sla
+msgid "Helpdesk SLA"
+msgstr "SLA hỗ trợ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model,name:helpdesk_mgmt_sla.model_helpdesk_sla_report
+msgid "Helpdesk SLA Report"
+msgstr "Báo cáo SLA hỗ trợ"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.view_helpdesk_sla_search
+msgid "Helpdesk SLA Search"
+msgstr "Tìm kiếm SLA hỗ trợ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model,name:helpdesk_mgmt_sla.model_helpdesk_ticket
+msgid "Helpdesk Ticket"
+msgstr "Phiếu hỗ trợ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model,name:helpdesk_mgmt_sla.model_helpdesk_ticket_team
+msgid "Helpdesk Ticket Team"
+msgstr "Nhóm hỗ trợ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__hours
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__hours
+msgid "Hours"
+msgstr "Giờ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__id
+msgid "ID"
+msgstr "ID"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_exception_icon
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng cho biết hoạt động ngoại lệ."
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu chọn, có tin nhắn mới cần bạn xử lý."
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu chọn, một số tin nhắn gặp lỗi khi gửi."
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__ignore_stage_ids
+msgid "Ignore Stages"
+msgstr "Bỏ qua giai đoạn"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_ticket_sla__state__on_hold
+msgid "In Hold"
+msgstr "Đang tạm dừng"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_ticket_sla__state__in_progress
+msgid "In Progress"
+msgstr "Đang xử lý"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_is_follower
+msgid "Is Follower"
+msgstr "Là người theo dõi"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__last_state_date
+msgid "Last State Date"
+msgstr "Ngày trạng thái gần nhất"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__write_uid
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__write_date
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "Leave blank for all companies."
+msgstr "Để trống để áp dụng cho mọi công ty."
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi gửi tin nhắn"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn chót hoạt động của tôi"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__name
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__name
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Sự kiện lịch của hoạt động kế tiếp"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn chót hoạt động kế tiếp"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động kế tiếp"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động kế tiếp"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__note
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số hành động"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lỗi"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số tin nhắn cần xử lý"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số tin nhắn bị lỗi gửi"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields.selection,name:helpdesk_mgmt_sla.selection__helpdesk_sla_report__state__on_going
+msgid "Ongoing"
+msgstr "Đang diễn ra"
+
+#. module: helpdesk_mgmt_sla
+#. odoo-python
+#: code:addons/helpdesk_mgmt_sla/models/helpdesk_ticket_sla.py:0
+#, python-format
+msgid "Operator is not valid"
+msgstr "Toán tử không hợp lệ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__rating_ids
+msgid "Ratings"
+msgstr "Đánh giá"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "Reach In"
+msgstr "Đạt trong"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__activity_user_id
+msgid "Responsible User"
+msgstr "Người phụ trách"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "Restore"
+msgstr "Khôi phục"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.ui.menu,name:helpdesk_mgmt_sla.helpdesk_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "SLA"
+msgstr "SLA"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_view_search
+msgid "SLA Expired"
+msgstr "SLA đã quá hạn"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_view_search
+msgid "SLA Not Expired"
+msgstr "SLA chưa quá hạn"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.actions.act_window,name:helpdesk_mgmt_sla.helpdesk_sla_report_act_window
+#: model:ir.ui.menu,name:helpdesk_mgmt_sla.helpdesk_sla_report_menu
+msgid "SLA Report"
+msgstr "Báo cáo SLA"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__sla_deadline
+msgid "SLA deadline"
+msgstr "Hạn chót SLA"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__sla_expired
+msgid "SLA expired"
+msgstr "SLA đã quá hạn"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.inherit_helpdesk_ticket_view_form
+msgid "Set SLA"
+msgstr "Đặt SLA"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__sla_id
+msgid "Sla"
+msgstr "SLA"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__sla_fits
+msgid "Sla Fits"
+msgstr "SLA phù hợp"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__stage_id
+msgid "Stage"
+msgstr "Giai đoạn"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__state
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__state
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Trạng thái dựa trên hoạt động\nQuá hạn: Đã qua ngày đến hạn\nHôm nay: Hoạt động diễn ra hôm nay\nĐã lên kế hoạch: Hoạt động trong tương lai."
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__tag_ids
+msgid "Tags"
+msgstr "Thẻ"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid "Target"
+msgstr "Mục tiêu"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__team_id
+msgid "Team"
+msgstr "Nhóm"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__team_sla
+msgid "Team SLA"
+msgstr "SLA của nhóm"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__team_ids
+msgid "Teams"
+msgstr "Các nhóm"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla_report__ticket_id
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_sla__ticket_id
+msgid "Ticket"
+msgstr "Phiếu hỗ trợ"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model,name:helpdesk_mgmt_sla.model_helpdesk_ticket_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket__ticket_sla_ids
+msgid "Ticket Sla"
+msgstr "SLA của phiếu"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ trên bản ghi."
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_team__use_sla
+msgid "Use SLA"
+msgstr "Sử dụng SLA"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_sla__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn website"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,help:helpdesk_mgmt_sla.field_helpdesk_sla__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử trao đổi qua website"
+
+#. module: helpdesk_mgmt_sla
+#: model:ir.model.fields,field_description:helpdesk_mgmt_sla.field_helpdesk_ticket_team__resource_calendar_id
+msgid "Working Hours"
+msgstr "Giờ làm việc"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid ""
+"days\n"
+"                                <br/>"
+msgstr "ngày\n                                <br/>"
+
+#. module: helpdesk_mgmt_sla
+#: model_terms:ir.ui.view,arch_db:helpdesk_mgmt_sla.helpdesk_ticket_sla_form
+msgid ""
+"hours\n"
+"                                <br/>"
+msgstr "giờ\n                                <br/>"

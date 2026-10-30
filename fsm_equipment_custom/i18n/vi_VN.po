@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fsm_equipment_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 04:27+0000\n"
+"PO-Revision-Date: 2026-06-11 04:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi_VN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fsm_equipment_custom
+#: model:ir.ui.menu,name:fsm_equipment_custom.menu_warranty_root
+msgid "Warranty"
+msgstr "Bảo hành"
+
+#. module: fsm_equipment_custom
+#: model:ir.actions.act_window,name:fsm_equipment_custom.action_fsm_equipment_project_list
+#: model:ir.ui.menu,name:fsm_equipment_custom.menu_fsm_equipment_project_list
+msgid "Equipment List"
+msgstr "Danh sách thiết bị"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_project
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Project Name"
+msgstr "Tên dự án"
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Contract / Quotation Number"
+msgstr "Số hợp đồng/ Báo giá"
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Product / Equipment"
+msgstr "Sản phẩm/ Thiết bị"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_product_code
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Product Code"
+msgstr "Mã hàng"
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Equipment"
+msgstr "Thiết bị"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_quantity
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Acceptance Date / Delivery Date"
+msgstr "Ngày nghiệm thu/ Ngày giao hàng"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_warranty_display
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Warranty Duration"
+msgstr "Thời gian bảo hành"
+
+#. module: fsm_equipment_custom
+#: code:addons/fsm_equipment_custom/models/fsm_equipment.py:0
+#, python-format
+msgid "week(s)"
+msgstr "tuần"
+
+#. module: fsm_equipment_custom
+#: code:addons/fsm_equipment_custom/models/fsm_equipment.py:0
+#, python-format
+msgid "month(s)"
+msgstr "tháng"
+
+#. module: fsm_equipment_custom
+#: code:addons/fsm_equipment_custom/models/fsm_equipment.py:0
+#, python-format
+msgid "year(s)"
+msgstr "năm"
+
+#. module: fsm_equipment_custom
+#: code:addons/fsm_equipment_custom/models/fsm_equipment.py:0
+#, python-format
+msgid "day(s)"
+msgstr "ngày"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_manufacturer
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Manufacturer"
+msgstr "Hãng sản xuất"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_note
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Notes"
+msgstr "Ghi chú"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_order__x_warranty_end_date
+msgid "Warranty Expiry Date"
+msgstr "Ngày hết hạn bảo hành"
+
+#. module: fsm_equipment_custom
+#: model:ir.actions.act_window,name:fsm_equipment_custom.action_fsm_warranty_order
+#: model:ir.ui.menu,name:fsm_equipment_custom.menu_fsm_warranty
+msgid "Warranty Order"
+msgstr "Đơn bảo hành"
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.actions.act_window,help:fsm_equipment_custom.action_fsm_warranty_order
+msgid "Create a new warranty order"
+msgstr "Tạo đơn bảo hành mới"
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.actions.act_window,help:fsm_equipment_custom.action_fsm_warranty_order
+msgid "Manage warranty requests as Field Service Orders."
+msgstr "Quản lý các yêu cầu bảo hành dưới dạng các Đơn dịch vụ (Field Service Order)."
+
+#. module: fsm_equipment_custom
+#: model_terms:ir.ui.view,arch_db:fsm_equipment_custom.fsm_equipment_project_list_view
+msgid "Equipment List"
+msgstr "Danh sách thiết bị"

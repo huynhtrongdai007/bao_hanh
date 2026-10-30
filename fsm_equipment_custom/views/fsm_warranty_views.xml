@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Inherit FSM Order Form View -->
+    <record id="fsm_order_form_warranty_inherit" model="ir.ui.view">
+        <field name="name">fsm.order.form.warranty.inherit</field>
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_form"/>
+        <field name="arch" type="xml">
+            <!-- Ensure equipment_id is visible if it is a warranty order or standard types -->
+            <xpath expr="//field[@name='equipment_id']" position="attributes">
+                <attribute name="invisible">internal_type not in ['repair', 'maintenance'] and not x_is_warranty</attribute>
+            </xpath>
+            <!-- Add custom boolean and related warranty end date fields -->
+            <xpath expr="//field[@name='equipment_id']" position="after">
+                <field name="x_is_warranty" invisible="1"/>
+                <field name="x_warranty_end_date" invisible="not x_is_warranty"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Inherit FSM Order Tree View -->
+    <record id="fsm_order_tree_warranty_inherit" model="ir.ui.view">
+        <field name="name">fsm.order.tree.warranty.inherit</field>
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <field name="x_is_warranty" column_invisible="True"/>
+                <field name="x_warranty_end_date" optional="show" invisible="not x_is_warranty" width="200px"/>
+            </xpath>
+            <field name="scheduled_date_start" position="attributes">
+                <attribute name="optional">show</attribute>
+                <attribute name="width">200px</attribute>
+            </field>
+            <field name="name" position="attributes">
+                <attribute name="optional">show</attribute>
+                <attribute name="width">200px</attribute>
+            </field>
+               <field name="location_id" position="attributes">
+                <attribute name="optional">show</attribute>
+                <attribute name="width">200px</attribute>
+            </field>
+            <field name="person_id" position="attributes">
+                <attribute name="optional">show</attribute>
+            </field>
+            <field name="stage_id" position="attributes">
+                <attribute name="optional">show</attribute>
+            </field>
+              <field name="company_id" position="attributes">
+                <attribute name="optional">show</attribute>
+            </field>
+        </field>
+    </record>
+
+    <!-- Inherit FSM Order Search View -->
+    <record id="fsm_order_search_warranty_inherit" model="ir.ui.view">
+        <field name="name">fsm.order.search.warranty.inherit</field>
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_search_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='todo']" position="before">
+                <filter string="Đơn bảo hành" name="warranty_orders" domain="[('x_is_warranty', '=', True)]"/>
+                <separator/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Window Action for Warranty Orders -->
+    <record id="action_fsm_warranty_order" model="ir.actions.act_window">
+        <field name="name">Đơn bảo hành</field>
+        <field name="res_model">fsm.order</field>
+        <field name="view_mode">tree,form,calendar,kanban</field>
+        <field name="domain"></field>
+        <field name="context">{'default_x_is_warranty': True, 'search_default_warranty_orders': 1}</field>
+        <field name="search_view_id" ref="fieldservice.fsm_order_search_view"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Tạo đơn bảo hành mới
+            </p>
+            <p>
+                Quản lý các yêu cầu bảo hành dưới dạng các Đơn dịch vụ (Field Service Order).
+            </p>
+        </field>
+    </record>
+
+    <!-- Root Menu: Bảo hành -->
+    <menuitem
+        id="menu_warranty_root"
+        name="Bảo hành"
+        sequence="15"
+        web_icon="fieldservice,static/description/icon.png"
+        groups="fieldservice.group_fsm_manager"/>
+
+
+    <!-- Submenu: Đơn bảo hành -->
+    <menuitem
+        id="menu_fsm_warranty"
+        name="Đơn bảo hành"
+        action="action_fsm_warranty_order"
+        parent="menu_warranty_root"
+        sequence="20"
+    />
+
+</odoo>

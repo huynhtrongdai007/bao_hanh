@@ -1,0 +1,68 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fsm_equipment_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-11 04:27+0000\n"
+"PO-Revision-Date: 2026-06-11 04:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fsm_equipment_custom
+#: model:ir.ui.menu,name:fsm_equipment_custom.menu_warranty_root
+msgid "Warranty"
+msgstr "Warranty"
+
+#. module: fsm_equipment_custom
+#: model:ir.actions.act_window,name:fsm_equipment_custom.action_fsm_equipment_project_list
+#: model:ir.ui.menu,name:fsm_equipment_custom.menu_fsm_equipment_project_list
+msgid "Equipment List"
+msgstr "Equipment List"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_project
+msgid "Project Name"
+msgstr "Project Name"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_note
+msgid "Notes"
+msgstr "Notes"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_manufacturer
+msgid "Manufacturer"
+msgstr "Manufacturer"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_product_code
+msgid "Product Code"
+msgstr "Product Code"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_quantity
+msgid "Quantity"
+msgstr "Quantity"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_equipment__x_warranty_display
+msgid "Warranty Duration"
+msgstr "Warranty Duration"
+
+#. module: fsm_equipment_custom
+#: model:ir.model.fields,field_description:fsm_equipment_custom.field_fsm_order__x_warranty_end_date
+msgid "Warranty Expiry Date"
+msgstr "Warranty Expiry Date"
+
+#. module: fsm_equipment_custom
+#: model:ir.actions.act_window,name:fsm_equipment_custom.action_fsm_warranty_order
+#: model:ir.ui.menu,name:fsm_equipment_custom.menu_fsm_warranty
+msgid "Warranty Order"
+msgstr "Warranty Order"

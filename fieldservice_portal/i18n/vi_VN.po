@@ -1,0 +1,223 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * fieldservice_portal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid ""
+"<br/>\n"
+"                                <strong>Arrival On Site:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>Đến hiện trường:</strong>"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid ""
+"<br/>\n"
+"                                <strong>City:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>Thành phố:</strong>"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid ""
+"<br/>\n"
+"                                <strong>Country:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>Quốc gia:</strong>"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid ""
+"<br/>\n"
+"                                <strong>Work Type:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <strong>Loại công việc:</strong>"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid "<span>N/A</span>"
+msgstr "<span>N/A</span>"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid "<strong>Location:</strong>"
+msgstr "<strong>Địa điểm:</strong>"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid "<strong>Stage:</strong>"
+msgstr "<strong>Giai đoạn:</strong>"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "All"
+msgstr "Tất cả"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_fsm_orders
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: fieldservice_portal
+#: model:ir.model.fields,help:fieldservice_portal.field_fsm_stage__portal_visible
+msgid ""
+"Enable to display field service orders based on it's stage in the portal"
+msgstr ""
+"Cho phép hiển thị các đơn dịch vụ hiện trường trên cổng thông tin dựa vào giai đoạn của chúng"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_home_fsm_order
+msgid "FSM Orders"
+msgstr "Đơn FSM"
+
+#. module: fieldservice_portal
+#: model:ir.model,name:fieldservice_portal.model_fsm_stage
+msgid "Field Service Stage"
+msgstr "Giai đoạn Dịch vụ Hiện trường"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid "History"
+msgstr "Lịch sử"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_fsm_orders
+#, python-format
+msgid "Location"
+msgstr "Địa điểm"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_fsm_orders
+#, python-format
+msgid "Name"
+msgstr "Tên"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "Newest"
+msgstr "Mới nhất"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "None"
+msgstr "Không có"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_fieldservice_order_page
+msgid "Not started yet"
+msgstr "Chưa bắt đầu"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "Open"
+msgstr "Đang mở"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "Search in All"
+msgstr "Tìm trong Tất cả"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "Search in Description"
+msgstr "Tìm trong Mô tả"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "Search in Location Numbers"
+msgstr "Tìm trong Mã địa điểm"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "Search in WO Number"
+msgstr "Tìm trong Số lệnh công việc"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_fsm_orders
+#, python-format
+msgid "Stage"
+msgstr "Giai đoạn"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_fsm_orders
+msgid "There are no Work Orders in your account."
+msgstr "Không có Lệnh công việc nào trong tài khoản của bạn."
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#, python-format
+msgid "Ticket"
+msgstr "Phiếu hỗ trợ"
+
+#. module: fieldservice_portal
+#. odoo-python
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#: code:addons/fieldservice_portal/controllers/fsm_order_portal.py:0
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_fsm_orders
+#, python-format
+msgid "Type"
+msgstr "Loại"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_home_fsm_order
+msgid "View your fieldservice orders"
+msgstr "Xem các đơn dịch vụ hiện trường của bạn"
+
+#. module: fieldservice_portal
+#: model:ir.model.fields,field_description:fieldservice_portal.field_fsm_stage__portal_visible
+msgid "Visible in Portal"
+msgstr "Hiển thị trên Cổng thông tin"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_breadcrumbs
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_fsm_orders
+msgid "Work Orders"
+msgstr "Lệnh công việc"
+
+#. module: fieldservice_portal
+#: model_terms:ir.ui.view,arch_db:fieldservice_portal.portal_my_fsm_orders
+msgid "Work Orders for"
+msgstr "Lệnh công việc cho"

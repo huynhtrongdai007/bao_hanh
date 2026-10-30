@@ -1,0 +1,251 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * product_warranty
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: Vietnamese\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_supplierinfo__active_supplier
+msgid "Active Supplier"
+msgstr "Nhà cung cấp đang hoạt động"
+
+#. module: product_warranty
+#: model_terms:ir.ui.view,arch_db:product_warranty.company_form
+msgid "CRM Product Return Address"
+msgstr "Địa chỉ Trả hàng Sản phẩm CRM"
+
+#. module: product_warranty
+#: model:ir.model,name:product_warranty.model_res_company
+msgid "Companies"
+msgstr "Các công ty"
+
+#. module: product_warranty
+#: model:ir.model.fields.selection,name:product_warranty.selection__product_supplierinfo__warranty_return_partner__company
+msgid "Company"
+msgstr "Công ty"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__create_uid
+msgid "Created by"
+msgstr "Tạo bởi"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__create_date
+msgid "Created on"
+msgstr "Tạo vào"
+
+#. module: product_warranty
+#: model:ir.model.fields.selection,name:product_warranty.selection__product_template__warranty_type__day
+msgid "Day(s)"
+msgstr "Ngày"
+
+#. module: product_warranty
+#: model:ir.model.fields,help:product_warranty.field_res_company__crm_return_address_id
+msgid ""
+"Default address where the customers has to send back the returned product. "
+"If empty, the address is the company address."
+msgstr ""
+"Địa chỉ mặc định nơi khách hàng phải gửi lại sản phẩm hoàn trả. "
+"Nếu để trống, địa chỉ sẽ là địa chỉ công ty."
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_warranty
+#: model:ir.model.fields,help:product_warranty.field_return_instruction__is_default
+msgid ""
+"If is default, will be use to set the default value in supplier info's. Be "
+"careful to have only one default."
+msgstr ""
+"Nếu là mặc định, sẽ được sử dụng để thiết lập giá trị mặc định trong thông tin của nhà cung cấp. Hãy cẩn thận chỉ để có một giá trị mặc định."
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_supplierinfo__return_instructions
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__instructions
+#: model_terms:ir.ui.view,arch_db:product_warranty.product_return_instructions_form_view
+msgid "Instructions"
+msgstr "Hướng dẫn"
+
+#. module: product_warranty
+#: model:ir.model,name:product_warranty.model_return_instruction
+msgid "Instructions for product return"
+msgstr "Hướng dẫn cho việc trả lại sản phẩm"
+
+#. module: product_warranty
+#: model:ir.model.fields,help:product_warranty.field_product_supplierinfo__return_instructions
+#: model:ir.model.fields,help:product_warranty.field_return_instruction__instructions
+msgid "Instructions for product return."
+msgstr "Hướng dẫn cho việc trả lại sản phẩm."
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__is_default
+msgid "Is Default"
+msgstr "Là Mặc định"
+
+#. module: product_warranty
+#: model:ir.model.fields,help:product_warranty.field_product_supplierinfo__active_supplier
+msgid "Is this supplier still active, only for information."
+msgstr "Nhà cung cấp này còn hoạt động không, chỉ mang tính chất thông tin."
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: product_warranty
+#: model:ir.model.fields.selection,name:product_warranty.selection__product_template__warranty_type__month
+msgid "Month(s)"
+msgstr "Tháng"
+
+#. module: product_warranty
+#: model:ir.model.fields.selection,name:product_warranty.selection__product_supplierinfo__warranty_return_partner__other
+msgid "Other"
+msgstr "Khác"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_supplierinfo__warranty_duration
+msgid "Period"
+msgstr "Thời hạn"
+
+#. module: product_warranty
+#: model:ir.model,name:product_warranty.model_product_template
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: product_warranty
+#: model:ir.actions.act_window,name:product_warranty.product_return_instructions_action
+#: model:ir.ui.menu,name:product_warranty.menu_product_return_instructions_action
+msgid "Products Return Instructions"
+msgstr "Hướng dẫn Trả lại Sản phẩm"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_supplierinfo__warranty_return_address
+#: model:ir.model.fields,field_description:product_warranty.field_res_company__crm_return_address_id
+msgid "Return address"
+msgstr "Địa chỉ trả hàng"
+
+#. module: product_warranty
+#: model_terms:ir.ui.view,arch_db:product_warranty.product_return_instructions_form_view
+msgid "Return instructions"
+msgstr "Hướng dẫn trả hàng"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_supplierinfo__warranty_return_other_address
+msgid "Return other address"
+msgstr "Địa chỉ trả hàng khác"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_supplierinfo__warranty_return_partner
+msgid "Return type"
+msgstr "Loại trả hàng"
+
+#. module: product_warranty
+#: model:ir.model.fields.selection,name:product_warranty.selection__product_supplierinfo__warranty_return_partner__supplier
+msgid "Supplier"
+msgstr "Nhà cung cấp"
+
+#. module: product_warranty
+#: model:ir.model,name:product_warranty.model_product_supplierinfo
+msgid "Supplier Pricelist"
+msgstr "Bảng giá Nhà cung cấp"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_return_instruction__name
+msgid "Title"
+msgstr "Tiêu đề"
+
+#. module: product_warranty
+#: model_terms:ir.ui.view,arch_db:product_warranty.product_template_extend_warranty
+msgid "Warranty"
+msgstr "Bảo hành"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_product__warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_template__warranty
+msgid "Warranty Duration"
+msgstr "Thời hạn Bảo hành"
+
+#. module: product_warranty
+#: model:ir.model.fields,field_description:product_warranty.field_product_product__warranty_type
+#: model:ir.model.fields,field_description:product_warranty.field_product_template__warranty_type
+msgid "Warranty Type"
+msgstr "Loại Bảo hành"
+
+#. module: product_warranty
+#: model:ir.model.fields,help:product_warranty.field_product_supplierinfo__warranty_duration
+msgid ""
+"Warranty in month for this product/supplier relation. Only for "
+"company/supplier relation (purchase order) ; the  customer/company relation "
+"(sale order) always use the product main warranty field."
+msgstr ""
+"Bảo hành tính bằng tháng cho mối quan hệ sản phẩm/nhà cung cấp này. Chỉ dành cho "
+"mối quan hệ công ty/nhà cung cấp (đơn mua hàng) ; mối quan hệ khách hàng/công ty "
+"(đơn bán hàng) luôn sử dụng trường bảo hành chính của sản phẩm."
+
+#. module: product_warranty
+#: model_terms:ir.ui.view,arch_db:product_warranty.product_supplierinfo_warranty_form_view
+msgid "Warranty informations"
+msgstr "Thông tin bảo hành"
+
+#. module: product_warranty
+#: model:ir.model.fields.selection,name:product_warranty.selection__product_template__warranty_type__week
+msgid "Week(s)"
+msgstr "Tuần"
+
+#. module: product_warranty
+#: model:ir.model.fields,help:product_warranty.field_product_supplierinfo__warranty_return_other_address
+msgid ""
+"Where the customer has to send back the product(s) if warranty return is set"
+" to 'other'."
+msgstr ""
+"Nơi khách hàng phải gửi lại (các) sản phẩm nếu việc trả lại bảo hành được thiết lập "
+"là 'khác'."
+
+#. module: product_warranty
+#: model:ir.model.fields,help:product_warranty.field_product_supplierinfo__warranty_return_address
+msgid ""
+"Where the goods should be returned  (computed field based on other infos.)"
+msgstr ""
+"Nơi hàng hóa nên được trả lại (trường được tính toán dựa trên các thông tin khác.)"
+
+#. module: product_warranty
+#: model:ir.model.fields,help:product_warranty.field_product_supplierinfo__warranty_return_partner
+msgid ""
+"Who is in charge of the warranty return treatment toward the end customer. "
+"Company will use the current company delivery or default address and so on "
+"for supplier and brand manufacturer. Doesn't necessarily mean that the "
+"warranty to be applied is the one of the return partner (ie: can be returned"
+" to the company and be under the brand warranty)."
+msgstr ""
+"Ai là người phụ trách việc xử lý trả lại bảo hành cho khách hàng cuối cùng. "
+"Công ty sẽ sử dụng địa chỉ giao hàng hiện tại hoặc địa chỉ mặc định của công ty, "
+"v.v. đối với nhà cung cấp và nhà sản xuất thương hiệu. Điều này không nhất thiết có nghĩa là "
+"bảo hành được áp dụng là của đối tác nhận trả hàng (nghĩa là: có thể được trả lại "
+"cho công ty và tuân theo bảo hành của thương hiệu)."
+
+#. module: product_warranty
+#: model:ir.model.fields.selection,name:product_warranty.selection__product_template__warranty_type__year
+msgid "Year(s)"
+msgstr "Năm"

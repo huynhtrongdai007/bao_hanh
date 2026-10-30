@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Kế thừa Form View của fsm.equipment -->
+    <record id="fsm_equipment_custom_form_view" model="ir.ui.view">
+        <field name="name">fsm.equipment.form.custom</field>
+        <field name="model">fsm.equipment</field>
+        <field name="inherit_id" ref="fieldservice.fsm_equipment_form_view"/>
+        <field name="arch" type="xml">
+            <!-- Thêm 3 field custom vào group main-right -->
+            <xpath expr="//field[@name='name']" position="attributes">
+               <attribute name="style">width: 100%;</attribute>
+            </xpath>
+            <xpath expr="//group[@id='main-right']" position="inside">
+                <field name="x_project"/>
+                <field name="x_quantity"/>
+                <field name="x_manufacturer"/>
+            </xpath>
+            <xpath expr="//group[@id='main-left']" position="inside">
+                <field name="x_product_code"/>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                  <page string="Ghi chú">
+                      <field name="x_note" nolabel="1"/>
+                  </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Kế thừa Tree View của fsm.equipment -->
+    <record id="fsm_equipment_custom_tree_view" model="ir.ui.view">
+        <field name="name">fsm.equipment.tree.custom</field>
+        <field name="model">fsm.equipment</field>
+        <field name="inherit_id" ref="fieldservice.fsm_equipment_tree_view"/>
+        <field name="arch" type="xml">
+            <!-- Thêm 3 field custom vào cuối tree, có optional="show" -->
+            <xpath expr="//tree" position="inside">
+                <field name="x_project" optional="show"/>
+                <field name="x_quantity" optional="show"/>
+                <field name="x_manufacturer" optional="show"/>
+            </xpath>
+
+            <!-- Thêm optional="show" cho tất cả field hiện có trong tree -->
+            <field name="name" position="attributes">
+                <attribute name="optional">show</attribute>
+            </field>
+            <field name="product_id" position="attributes">
+                <attribute name="optional">hide</attribute>
+            </field>
+            <field name="warranty_start_date" position="attributes">
+                <attribute name="optional">show</attribute>
+                <attribute name="width">200px</attribute>
+            </field>
+            <field name="warranty_end_date" position="attributes">
+                <attribute name="optional">show</attribute>
+                <attribute name="width">200px</attribute>
+            </field>
+            <field name="person_id" position="attributes">
+                <attribute name="optional">show</attribute>
+                <attribute name="width">250px</attribute>
+            </field>
+            <field name="location_id" position="attributes">
+                <attribute name="optional">show</attribute>
+                <attribute name="width">200px</attribute>
+            </field>
+            <field name="current_location_id" position="attributes">
+                <attribute name="optional">show</attribute>
+            </field>
+            <field name="stage_id" position="attributes">
+                <attribute name="optional">show</attribute>
+            </field>
+        </field>
+    </record>
+
+
+    <!-- List View mới: Danh sách thiết bị theo dự án -->
+    <record id="fsm_equipment_project_list_view" model="ir.ui.view">
+        <field name="name">fsm.equipment.project.list</field>
+        <field name="model">fsm.equipment</field>
+        <field name="arch" type="xml">
+            <tree string="Equipment List">
+                <field name="x_project" string="Project Name"/>
+                <field name="owned_by_id" string="Customer"/>
+                <field name="agreement_id" string="Contract / Quotation Number"/>
+                <field name="product_id" string="Product / Equipment"/>
+                <field name="notes" string="Description"/>
+                <field name="x_product_code" string="Product Code"/>
+                <field name="name" string="Equipment"/>
+                <field name="x_quantity" string="Quantity"/>
+                <field name="warranty_start_date" string="Acceptance Date / Delivery Date"/>
+                <field name="x_warranty_display" string="Warranty Duration"/>
+                <field name="x_manufacturer" string="Manufacturer"/>
+                <field name="x_note" string="Notes"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Action cho list view mới -->
+    <record id="action_fsm_equipment_project_list" model="ir.actions.act_window">
+        <field name="name">Danh sách thiết bị</field>
+        <field name="res_model">fsm.equipment</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'tree', 'view_id': ref('fsm_equipment_project_list_view')})]"/>
+    </record>
+
+    <!-- Menu item -->
+    <menuitem
+        id="menu_fsm_equipment_project_list"
+        name="Danh sách thiết bị"
+        action="action_fsm_equipment_project_list"
+        parent="menu_warranty_root"
+        sequence="5"
+    />
+
+</odoo>

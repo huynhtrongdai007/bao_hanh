@@ -1,0 +1,2449 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* rma
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0
+"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: Vietnamese
+"
+"Language: vi
+"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit
+"
+"Plural-Forms: nplurals=1; plural=0;
+"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma_team.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (bản sao)"
+
+#. module: rma
+#: model:ir.actions.report,print_report_name:rma.report_rma_action
+msgid "(object._get_report_base_filename())"
+msgstr "(object._get_report_base_filename())"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid ""
+"<b>E-mail subject:</b> %(subject)s<br/><br/><b>E-mail body:</b><br/>%(body)s"
+msgstr "<b>Tiêu đề email:</b> %(subject)s<br/><br/><b>Nội dung email:</b><br/>%(body)s"
+
+#. module: rma
+#: model:mail.template,body_html:rma.mail_template_rma_notification
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                    Dear\n"
+"                    <t t-out=\"object.partner_id.name\"></t>\n"
+"                    <t t-if=\"object.partner_id.parent_id\">\n"
+"                        <t t-out=\"object.partner_id.parent_id.name\"></t>\n"
+"                    </t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Here is the RMA\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.name\"></t>\n"
+"                    </strong>\n"
+"                    from\n"
+"                    <t t-out=\"object.company_id.name\"></t>\n"
+"                    .\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Do not hesitate to contact us if you have any question.\n"
+"                </p>\n"
+"            </div>\n"
+"        "
+msgstr "<div style=\"margin: 0px; padding: 0px;\">\n                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n                    Kính gửi\n                    <t t-out=\"object.partner_id.name\"></t>\n                    <t t-if=\"object.partner_id.parent_id\">\n                        <t t-out=\"object.partner_id.parent_id.name\"></t>\n                    </t>\n                    <br>\n                    <br>\n                    Đây là RMA\n                    <strong>\n                        <t t-out=\"object.name\"></t>\n                    </strong>\n                    từ\n                    <t t-out=\"object.company_id.name\"></t>\n                    .\n                    <br>\n                    <br>\n                    Đừng ngần ngại liên hệ với chúng tôi nếu bạn có thắc mắc.\n                </p>\n            </div>\n        "
+
+#. module: rma
+#: model:mail.template,body_html:rma.mail_template_rma_receipt_notification
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                    Dear\n"
+"                    <t t-out=\"object.partner_id.name\"></t>\n"
+"                    <t t-if=\"object.partner_id.parent_id\">\n"
+"                        <t t-out=\"object.partner_id.parent_id.name\"></t>\n"
+"                    </t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    The products for your RMA\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.name\"></t>\n"
+"                    </strong>\n"
+"                    from\n"
+"                    <t t-out=\"object.company_id.name\"></t>\n"
+"                    have been received in our warehouse.\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Do not hesitate to contact us if you have any question.\n"
+"                </p>\n"
+"            </div>\n"
+"        "
+msgstr "<div style=\"margin: 0px; padding: 0px;\">\n                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n                    Kính gửi\n                    <t t-out=\"object.partner_id.name\"></t>\n                    <t t-if=\"object.partner_id.parent_id\">\n                        <t t-out=\"object.partner_id.parent_id.name\"></t>\n                    </t>\n                    <br>\n                    <br>\n                    Hàng hoá cho RMA\n                    <strong>\n                        <t t-out=\"object.name\"></t>\n                    </strong>\n                    từ\n                    <t t-out=\"object.company_id.name\"></t>\n                    đã được nhận tại kho của chúng tôi.\n                    <br>\n                    <br>\n                    Đừng ngần ngại liên hệ với chúng tôi nếu bạn có thắc mắc.\n                </p>\n            </div>\n        "
+
+#. module: rma
+#: model:mail.template,body_html:rma.mail_template_rma_draft_notification
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"                    Dear\n"
+"                    <t t-out=\"object.partner_id.name\"></t>\n"
+"                    <t t-if=\"object.partner_id.parent_id\">\n"
+"                        <t t-out=\"object.partner_id.parent_id.name\"></t>\n"
+"                    </t>\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    You've succesfully placed your RMA\n"
+"                    <strong>\n"
+"                        <t t-out=\"object.name\"></t>\n"
+"                    </strong>\n"
+"                    on\n"
+"                    <t t-out=\"object.company_id.name\"></t>\n"
+"                    . Our team will check it and will validate it as soon as possible.\n"
+"                    <br>\n"
+"                    <br>\n"
+"                    Do not hesitate to contact us if you have any question.\n"
+"                </p>\n"
+"            </div>\n"
+"        "
+msgstr "<div style=\"margin: 0px; padding: 0px;\">\n                <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n                    Kính gửi\n                    <t t-out=\"object.partner_id.name\"></t>\n                    <t t-if=\"object.partner_id.parent_id\">\n                        <t t-out=\"object.partner_id.parent_id.name\"></t>\n                    </t>\n                    <br>\n                    <br>\n                    Bạn đã tạo thành công RMA\n                    <strong>\n                        <t t-out=\"object.name\"></t>\n                    </strong>\n                    vào\n                    <t t-out=\"object.company_id.name\"></t>\n                    . Đội ngũ của chúng tôi sẽ kiểm tra và duyệt sớm nhất có thể.\n                    <br>\n                    <br>\n                    Đừng ngần ngại liên hệ với chúng tôi nếu bạn có thắc mắc.\n                </p>\n            </div>\n        "
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<i class=\"fa fa-download\" role=\"img\" aria-label=\"Download\" title=\"Download\"/>"
+msgstr "<i class=\"fa fa-download\" role=\"img\" aria-label=\"Tải xuống\" title=\"Tải xuống\"/>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<i class=\"fa fa-fw fa-check\"/>\n"
+"                                <b>Paid</b>"
+msgstr "<i class=\"fa fa-fw fa-check\"/>\n                                <b>Đã thanh toán</b>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<i class=\"fa fa-fw fa-clock-o\"/>\n"
+"                                <b>Waiting Payment</b>"
+msgstr "<i class=\"fa fa-fw fa-clock-o\"/>\n                                <b>Chờ thanh toán</b>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<i class=\"fa fa-pencil-square-o mr-1\" role=\"img\" aria-label=\"Download\""
+" title=\"Download\"/>"
+msgstr "<i class=\"fa fa-pencil-square-o mr-1\" role=\"img\" aria-label=\"Tải xuống\" title=\"Tải xuống\"/>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Download\" "
+"title=\"Download\"/>"
+msgstr "<i class=\"fa fa-truck mr-1\" role=\"img\" aria-label=\"Tải xuống\" title=\"Tải xuống\"/>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<span class=\"badge badge-danger label-text-align\">\n"
+"                                            <i class=\"fa fa-fw fa-times\"/>\n"
+"                                            Cancelled\n"
+"                                        </span>"
+msgstr "<span class=\"badge badge-danger label-text-align\">\n                                            <i class=\"fa fa-fw fa-times\"/>\n                                            Đã huỷ\n                                        </span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<span class=\"badge badge-danger label-text-align\">\n"
+"                                    <i class=\"fa fa-fw fa-times\"/>\n"
+"                                    Cancelled\n"
+"                                </span>"
+msgstr "<span class=\"badge badge-danger label-text-align\">\n                                    <i class=\"fa fa-fw fa-times\"/>\n                                    Đã huỷ\n                                </span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<span class=\"badge badge-info label-text-align\">\n"
+"                                            <i class=\"fa fa-fw fa-clock-o\"/>\n"
+"                                            Preparation\n"
+"                                        </span>"
+msgstr "<span class=\"badge badge-info label-text-align\">\n                                            <i class=\"fa fa-fw fa-clock-o\"/>\n                                            Đang chuẩn bị\n                                        </span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<span class=\"badge badge-info label-text-align\">\n"
+"                                    <i class=\"fa fa-fw fa-clock-o\"/>\n"
+"                                    Preparation\n"
+"                                </span>"
+msgstr "<span class=\"badge badge-info label-text-align\">\n                                    <i class=\"fa fa-fw fa-clock-o\"/>\n                                    Đang chuẩn bị\n                                </span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<span class=\"badge badge-success label-text-align\">\n"
+"                                            <i class=\"fa fa-fw fa-truck\"/>\n"
+"                                            Shipped\n"
+"                                        </span>"
+msgstr "<span class=\"badge badge-success label-text-align\">\n                                            <i class=\"fa fa-fw fa-truck\"/>\n                                            Đã gửi đi\n                                        </span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<span class=\"badge badge-success label-text-align\">\n"
+"                                    <i class=\"fa fa-fw fa-truck\"/>\n"
+"                                    Shipped\n"
+"                                </span>"
+msgstr "<span class=\"badge badge-success label-text-align\">\n                                    <i class=\"fa fa-fw fa-truck\"/>\n                                    Đã gửi đi\n                                </span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<span class=\"badge badge-warning label-text-align\">\n"
+"                                            <i class=\"fa fa-fw fa-clock-o\"/>\n"
+"                                            Partially Available\n"
+"                                        </span>"
+msgstr "<span class=\"badge badge-warning label-text-align\">\n                                            <i class=\"fa fa-fw fa-clock-o\"/>\n                                            Có một phần\n                                        </span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid ""
+"<span class=\"badge badge-warning label-text-align\">\n"
+"                                    <i class=\"fa fa-fw fa-clock-o\"/>\n"
+"                                    Partially Available\n"
+"                                </span>"
+msgstr "<span class=\"badge badge-warning label-text-align\">\n                                    <i class=\"fa fa-fw fa-clock-o\"/>\n                                    Có một phần\n                                </span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+msgid "<span>Awaiting action</span>"
+msgstr "<span>Chờ xử lý</span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+msgid "<span>Draft</span>"
+msgstr "<span>Nháp</span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+msgid "<span>Processed</span>"
+msgstr "<span>Đã xử lý</span>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong class=\"d-block mb-1\">Delivery</strong>"
+msgstr "<strong class=\"d-block mb-1\">Giao hàng</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong class=\"d-block mb-1\">Reception</strong>"
+msgstr "<strong class=\"d-block mb-1\">Nhận hàng</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong class=\"d-block mb-1\">Refund</strong>"
+msgstr "<strong class=\"d-block mb-1\">Hoàn tiền</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>Customer:</strong>"
+msgstr "<strong>Khách hàng:</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Ngày:</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "<strong>Deadline:</strong>"
+msgstr "<strong>Hạn chót:</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>Deadline</strong>"
+msgstr "<strong>Hạn chót</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>Delivered quantity</strong>"
+msgstr "<strong>Số lượng đã giao</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>Origin delivery</strong>"
+msgstr "<strong>Phiếu giao gốc</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "<strong>Origin:</strong>"
+msgstr "<strong>Nguồn gốc:</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>Origin</strong>"
+msgstr "<strong>Nguồn gốc</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>Product</strong>"
+msgstr "<strong>Sản phẩm</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Số lượng</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>RMA Date</strong>"
+msgstr "<strong>Ngày RMA</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "<strong>RMA Note:</strong>"
+msgstr "<strong>Ghi chú RMA:</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "<strong>Responsible:</strong>"
+msgstr "<strong>Người phụ trách:</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "<strong>Shipping Address:</strong>"
+msgstr "<strong>Địa chỉ giao hàng:</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "<strong>Shipping address:</strong>"
+msgstr "<strong>Địa chỉ giao hàng:</strong>"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "<strong>State:</strong>"
+msgstr "<strong>Trạng thái:</strong>"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_defaults
+msgid ""
+"A Python dictionary that will be evaluated to provide default values when "
+"creating new records for this alias."
+msgstr "Từ điển Python được đánh giá để cung cấp giá trị mặc định khi tạo bản ghi mới cho bí danh này."
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
+msgid "Accept Emails From"
+msgstr "Nhận email từ"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__access_warning
+msgid "Access warning"
+msgstr "Cảnh báo truy cập"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_needaction
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_needaction
+msgid "Action Needed"
+msgstr "Cần xử lý"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__active
+#: model:ir.model.fields,field_description:rma.field_rma_operation__active
+#: model:ir.model.fields,field_description:rma.field_rma_tag__active
+#: model:ir.model.fields,field_description:rma.field_rma_team__active
+#: model_terms:ir.ui.view,arch_db:rma.rma_finalization_view_search
+#: model_terms:ir.ui.view,arch_db:rma.rma_tag_view_search
+msgid "Active"
+msgstr "Đang hoạt động"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_ids
+msgid "Activities"
+msgstr "Hoạt động"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Trang trí ngoại lệ hoạt động"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hoạt động"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_id
+msgid "Alias"
+msgstr "Bí danh"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_contact
+msgid "Alias Contact Security"
+msgstr "Bảo mật liên hệ của bí danh"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_domain_id
+msgid "Alias Domain"
+msgstr "Tên miền bí danh"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_domain
+msgid "Alias Domain Name"
+msgstr "Tên miền của bí danh"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_full_name
+msgid "Alias Email"
+msgstr "Email bí danh"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_name
+msgid "Alias Name"
+msgstr "Tên bí danh"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_status
+msgid "Alias Status"
+msgstr "Trạng thái bí danh"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_status
+msgid "Alias status assessed on the last message received."
+msgstr "Trạng thái bí danh đánh giá theo tin nhắn nhận gần nhất."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_model_id
+msgid "Aliased Model"
+msgstr "Mô hình gắn bí danh"
+
+#. module: rma
+#: model:res.groups,name:rma.group_rma_manual_finalization
+msgid "Allow RMA manual finalization"
+msgstr "Cho phép kết thúc RMA thủ công"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_res_config_settings__group_rma_manual_finalization
+msgid "Allow to finish an RMA without returning back a product or refunding"
+msgstr "Cho phép kết thúc RMA mà không cần trả hàng hay hoàn tiền"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_finalization_view_search
+#: model_terms:ir.ui.view,arch_db:rma.rma_tag_view_search
+#: model_terms:ir.ui.view,arch_db:rma.view_rma_finalization_form
+msgid "Archived"
+msgstr "Đã lưu trữ"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Are you sure you want to cancel this RMA"
+msgstr "Bạn có chắc muốn huỷ RMA này không"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_attachment_count
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số tệp đính kèm"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__auto_confirm_reception
+msgid "Auto Confirm Reception"
+msgstr "Tự động xác nhận nhận hàng"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_delivery__automatic_after_receipt
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_refund__automatic_after_receipt
+msgid "Automatically After Receipt"
+msgstr "Tự động sau khi nhận hàng"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_delivery__automatic_on_confirm
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_receipt__automatic_on_confirm
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_refund__automatic_on_confirm
+msgid "Automatically on Confirm"
+msgstr "Tự động khi xác nhận"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
+msgid "Avatar"
+msgstr "Ảnh đại diện"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma_operation.py:0
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+#, python-format
+msgid "Awaiting Action"
+msgstr "Chờ xử lý"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+msgid "Awaiting action"
+msgstr "Chờ xử lý"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__can_be_finished
+msgid "Can Be Finished"
+msgstr "Có thể kết thúc"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__can_be_locked
+msgid "Can Be Locked"
+msgstr "Có thể khoá"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__can_be_refunded
+msgid "Can Be Refunded"
+msgstr "Có thể hoàn tiền"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__can_be_replaced
+msgid "Can Be Replaced"
+msgstr "Có thể đổi hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__can_be_returned
+msgid "Can Be Returned"
+msgstr "Có thể trả hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__can_be_split
+msgid "Can Be Split"
+msgstr "Có thể tách"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_finalization_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:rma.rma_redelivery_wizard_view_form
+#: model_terms:ir.ui.view,arch_db:rma.rma_split_wizard_view_form2
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Cancel"
+msgstr "Huỷ"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__cancelled
+msgid "Canceled"
+msgstr "Đã huỷ"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__uom_category_id
+msgid "Category"
+msgstr "Danh mục"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__uom_category_id
+msgid "Category UoM"
+msgstr "Nhóm đơn vị tính"
+
+#. module: rma
+#: model_terms:ir.actions.act_window,help:rma.rma_action
+#: model_terms:ir.actions.act_window,help:rma.rma_team_action
+msgid "Click to add a new RMA."
+msgstr "Bấm để thêm RMA mới."
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Closed"
+msgstr "Đã đóng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__color
+msgid "Color"
+msgstr "Màu"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_tag__color
+msgid "Color Index"
+msgstr "Chỉ số màu"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__commercial_partner_id
+msgid "Commercial Entity"
+msgstr "Pháp nhân thương mại"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "Communication"
+msgstr "Trao đổi"
+
+#. module: rma
+#: model:ir.model,name:rma.model_res_company
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__company_id
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__company_id
+#: model:ir.model.fields,field_description:rma.field_rma_team__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: rma
+#: model:ir.model,name:rma.model_res_config_settings
+msgid "Config Settings"
+msgstr "Thiết lập cấu hình"
+
+#. module: rma
+#: model:ir.ui.menu,name:rma.rma_configuration_menu
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Confirm"
+msgstr "Xác nhận"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__confirmed
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Confirmed"
+msgstr "Đã xác nhận"
+
+#. module: rma
+#: model:ir.model,name:rma.model_res_partner
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__uom_category_id
+#: model:ir.model.fields,help:rma.field_rma_delivery_wizard__uom_category_id
+msgid ""
+"Conversion between Units of Measure can only occur if they belong to the "
+"same category. The conversion will be made based on the ratios."
+msgstr "Chỉ có thể quy đổi giữa các đơn vị tính thuộc cùng một nhóm. Việc quy đổi dựa trên các tỷ lệ."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__count_rma_awaiting_action
+msgid "Count Rma Awaiting Action"
+msgstr "Số RMA chờ xử lý"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__count_rma_draft
+msgid "Count Rma Draft"
+msgstr "Số RMA nháp"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__count_rma_processed
+msgid "Count Rma Processed"
+msgstr "Số RMA đã xử lý"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_return_picking__create_rma
+msgid "Create RMAs"
+msgstr "Tạo RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__action_create_receipt
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Create Receipt"
+msgstr "Tạo phiếu nhận"
+
+#. module: rma
+#: model_terms:ir.actions.act_window,help:rma.action_rma_finalization
+msgid "Create a new RMA finalization"
+msgstr "Tạo lý do kết thúc RMA mới"
+
+#. module: rma
+#: model_terms:ir.actions.act_window,help:rma.rma_dashboard_action
+msgid "Create a new RMA operation"
+msgstr "Tạo thao tác RMA mới"
+
+#. module: rma
+#: model_terms:ir.actions.act_window,help:rma.action_rma_tag
+msgid "Create a new RMA tag"
+msgstr "Tạo thẻ RMA mới"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__create_uid
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__create_uid
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__create_uid
+#: model:ir.model.fields,field_description:rma.field_rma_finalization_wizard__create_uid
+#: model:ir.model.fields,field_description:rma.field_rma_operation__create_uid
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__create_uid
+#: model:ir.model.fields,field_description:rma.field_rma_tag__create_uid
+#: model:ir.model.fields,field_description:rma.field_rma_team__create_uid
+msgid "Created by"
+msgstr "Tạo bởi"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__create_date
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__create_date
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__create_date
+#: model:ir.model.fields,field_description:rma.field_rma_finalization_wizard__create_date
+#: model:ir.model.fields,field_description:rma.field_rma_operation__create_date
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__create_date
+#: model:ir.model.fields,field_description:rma.field_rma_tag__create_date
+#: model:ir.model.fields,field_description:rma.field_rma_team__create_date
+msgid "Created on"
+msgstr "Tạo vào"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_bounced_content
+msgid "Custom Bounced Message"
+msgstr "Thông báo trả lại tuỳ chỉnh"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#: model:ir.model.fields,field_description:rma.field_rma__partner_id
+#, python-format
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__access_url
+msgid "Customer Portal URL"
+msgstr "Đường dẫn cổng khách hàng"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/controllers/main.py:0
+#: model:ir.model.fields,field_description:rma.field_rma__date
+#: model_terms:ir.ui.view,arch_db:rma.portal_my_rmas
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+#, python-format
+msgid "Date"
+msgstr "Ngày"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "Date:"
+msgstr "Ngày:"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__deadline
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Deadline"
+msgstr "Hạn chót"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_defaults
+msgid "Default Values"
+msgstr "Giá trị mặc định"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_operation__action_create_delivery
+msgid "Define how the delivery action should be handled."
+msgstr "Xác định cách xử lý thao tác giao hàng."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_operation__action_create_receipt
+msgid "Define how the receipt action should be handled."
+msgstr "Xác định cách xử lý thao tác nhận hàng."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_operation__action_create_refund
+msgid "Define how the refund action should be handled."
+msgstr "Xác định cách xử lý thao tác hoàn tiền."
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_redelivery_wizard_view_form
+msgid "Deliver"
+msgstr "Giao hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__delivered_qty
+msgid "Delivered Qty"
+msgstr "SL đã giao"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "Delivered Quantity"
+msgstr "Số lượng đã giao"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Delivery"
+msgstr "Giao hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__action_create_delivery
+msgid "Delivery Action"
+msgstr "Thao tác giao hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__delivery_picking_count
+msgid "Delivery count"
+msgstr "Số phiếu giao"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__delivery_move_ids
+msgid "Delivery reservation"
+msgstr "Giữ hàng cho phiếu giao"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__description
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__different_return_product
+#: model:ir.model.fields,field_description:rma.field_rma_operation__different_return_product
+#: model:ir.model.fields,field_description:rma.field_stock_return_picking_line__different_return_product
+msgid "Different Return Product"
+msgstr "Sản phẩm trả khác"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__display_name
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__display_name
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__display_name
+#: model:ir.model.fields,field_description:rma.field_rma_finalization_wizard__display_name
+#: model:ir.model.fields,field_description:rma.field_rma_operation__display_name
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__display_name
+#: model:ir.model.fields,field_description:rma.field_rma_tag__display_name
+#: model:ir.model.fields,field_description:rma.field_rma_team__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__prevent_delivery_grouping
+msgid "Do not group deliveries"
+msgstr "Không gộp phiếu giao"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma_operation.py:0
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__draft
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+#, python-format
+msgid "Draft"
+msgstr "Nháp"
+
+#. module: rma
+#: model:mail.message.subtype,name:rma.mt_rma_draft
+#: model:mail.message.subtype,name:rma.mt_rma_team_rma_draft
+msgid "Draft RMA"
+msgstr "RMA nháp"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
+msgid "Email"
+msgstr "Email"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_email
+#: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
+msgid "Email Alias"
+msgstr "Bí danh email"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Email Template"
+msgstr "Mẫu email"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_company__rma_mail_confirmation_template_id
+#: model:ir.model.fields,field_description:rma.field_res_config_settings__rma_mail_confirmation_template_id
+msgid "Email Template confirmation for RMA"
+msgstr "Mẫu email xác nhận RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_company__rma_mail_draft_confirmation_template_id
+#: model:ir.model.fields,field_description:rma.field_res_config_settings__rma_mail_draft_confirmation_template_id
+msgid "Email Template draft notification for RMA"
+msgstr "Mẫu email thông báo RMA nháp"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_company__rma_mail_receipt_confirmation_template_id
+#: model:ir.model.fields,field_description:rma.field_res_config_settings__rma_mail_receipt_confirmation_template_id
+msgid "Email Template receipt confirmation for RMA"
+msgstr "Mẫu email xác nhận đã nhận hàng RMA"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_domain
+msgid "Email domain e.g. 'example.com' in 'odoo@example.com'"
+msgstr "Tên miền email, ví dụ 'example.com' trong 'odoo@example.com'"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_res_company__rma_mail_confirmation_template_id
+#: model:ir.model.fields,help:rma.field_res_config_settings__rma_mail_confirmation_template_id
+msgid "Email sent to the customer once the RMA is confirmed."
+msgstr "Email gửi cho khách hàng khi RMA được xác nhận."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_res_company__rma_mail_receipt_confirmation_template_id
+#: model:ir.model.fields,help:rma.field_res_config_settings__rma_mail_receipt_confirmation_template_id
+msgid "Email sent to the customer once the RMA products are received."
+msgstr "Email gửi cho khách hàng khi đã nhận được hàng RMA."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_res_company__rma_mail_draft_confirmation_template_id
+#: model:ir.model.fields,help:rma.field_res_config_settings__rma_mail_draft_confirmation_template_id
+msgid "Email sent to the customer when they place an RMA from the portal"
+msgstr "Email gửi cho khách hàng khi họ tạo RMA từ cổng thông tin"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Emails"
+msgstr "Email"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_operation__auto_confirm_reception
+msgid ""
+"Enable this option to automatically confirm the reception when the RMA is "
+"confirmed."
+msgstr "Bật tuỳ chọn này để tự động xác nhận nhận hàng khi RMA được xác nhận."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/wizard/rma_split.py:0
+#, python-format
+msgid "Extracted RMA"
+msgstr "RMA đã tách"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__origin_split_rma_id
+msgid "Extracted from"
+msgstr "Tách từ"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__finalization_id
+msgid "Finalization Reason"
+msgstr "Lý do kết thúc"
+
+#. module: rma
+#: model:ir.model.constraint,message:rma.constraint_rma_finalization_name_company_uniq
+msgid "Finalization name already exists !"
+msgstr "Tên lý do kết thúc đã tồn tại!"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_finalization_form
+msgid "Finish"
+msgstr "Kết thúc"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_finalization_wizard_view_form
+msgid "Finish RMA"
+msgstr "Kết thúc RMA"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.rma_finalization_wizard_action
+msgid "Finish RMA Manualy"
+msgstr "Kết thúc RMA thủ công"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_config_settings__group_rma_manual_finalization
+msgid "Finish RMA manually choosing a reason"
+msgstr "Kết thúc RMA thủ công bằng cách chọn lý do"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__finished
+msgid "Finished"
+msgstr "Đã kết thúc"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_follower_ids
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_partner_ids
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Biểu tượng Font Awesome, ví dụ fa-tasks"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Group By"
+msgstr "Nhóm theo"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_company__rma_return_grouping
+#: model:ir.model.fields,field_description:rma.field_res_config_settings__rma_return_grouping
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__rma_return_grouping
+msgid "Group RMA returns by customer address and warehouse"
+msgstr "Gộp hàng trả RMA theo địa chỉ khách hàng và kho"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Group RMA returns by customer and warehouse."
+msgstr "Gộp hàng trả RMA theo khách hàng và kho."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__has_message
+#: model:ir.model.fields,field_description:rma.field_rma_team__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__id
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__id
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__id
+#: model:ir.model.fields,field_description:rma.field_rma_finalization_wizard__id
+#: model:ir.model.fields,field_description:rma.field_rma_operation__id
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__id
+#: model:ir.model.fields,field_description:rma.field_rma_tag__id
+#: model:ir.model.fields,field_description:rma.field_rma_team__id
+msgid "ID"
+msgstr "ID"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_parent_thread_id
+msgid ""
+"ID of the parent record holding the alias (example: project holding the task"
+" creation alias)"
+msgstr "ID của bản ghi cha giữ bí danh (ví dụ: dự án giữ bí danh tạo nhiệm vụ)"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_exception_icon
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng cho biết hoạt động ngoại lệ."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__different_return_product
+#: model:ir.model.fields,help:rma.field_rma_operation__different_return_product
+#: model:ir.model.fields,help:rma.field_stock_return_picking_line__different_return_product
+msgid ""
+"If checked, allows the return of a product different from the one originally"
+" ordered. Used if the delivery is created automatically"
+msgstr "Nếu bật, cho phép trả về sản phẩm khác với sản phẩm đã đặt ban đầu. Dùng khi phiếu giao được tạo tự động"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__message_needaction
+#: model:ir.model.fields,help:rma.field_rma_team__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu chọn, có tin nhắn mới cần bạn xử lý."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__message_has_error
+#: model:ir.model.fields,help:rma.field_rma_team__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu chọn, một số tin nhắn gặp lỗi khi gửi."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_operation__prevent_delivery_grouping
+msgid ""
+"If enabled, RMAs using this operation will NOT be grouped into a single "
+"delivery picking, even if the company setting allows grouping."
+msgstr "Nếu bật, các RMA dùng thao tác này sẽ KHÔNG được gộp vào một phiếu giao duy nhất, kể cả khi thiết lập công ty cho phép gộp."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_bounced_content
+msgid ""
+"If set, this content will automatically be sent out to unauthorized users "
+"instead of the default message."
+msgstr "Nếu đặt, nội dung này sẽ tự động gửi cho người dùng không có quyền, thay cho thông báo mặc định."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__active
+msgid ""
+"If the active field is set to false, it will allow you to hide the RMA Team "
+"without removing it."
+msgstr "Nếu trường Đang hoạt động đặt là sai, bạn có thể ẩn nhóm RMA mà không cần xoá."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "Incoming e-mail"
+msgstr "Email đến"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__manual_finish_allowed
+msgid ""
+"Indicates whether this RMA can be manually finished, without requiring "
+"further processing such as a receipt, delivery, or refund."
+msgstr "Cho biết RMA này có thể kết thúc thủ công hay không, mà không cần xử lý thêm như nhận hàng, giao hàng hay hoàn tiền."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__partner_invoice_id
+msgid "Invoice Address"
+msgstr "Địa chỉ xuất hoá đơn"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "Invoicing Address:"
+msgstr "Địa chỉ xuất hoá đơn:"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "Invoicing and Shipping Address:"
+msgstr "Địa chỉ xuất hoá đơn và giao hàng:"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_is_follower
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_is_follower
+msgid "Is Follower"
+msgstr "Là người theo dõi"
+
+#. module: rma
+#: model:ir.model,name:rma.model_account_move
+msgid "Journal Entry"
+msgstr "Bút toán"
+
+#. module: rma
+#: model:ir.model,name:rma.model_account_move_line
+msgid "Journal Item"
+msgstr "Chi tiết bút toán"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__write_uid
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__write_uid
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__write_uid
+#: model:ir.model.fields,field_description:rma.field_rma_finalization_wizard__write_uid
+#: model:ir.model.fields,field_description:rma.field_rma_operation__write_uid
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__write_uid
+#: model:ir.model.fields,field_description:rma.field_rma_tag__write_uid
+#: model:ir.model.fields,field_description:rma.field_rma_team__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__write_date
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__write_date
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__write_date
+#: model:ir.model.fields,field_description:rma.field_rma_finalization_wizard__write_date
+#: model:ir.model.fields,field_description:rma.field_rma_operation__write_date
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__write_date
+#: model:ir.model.fields,field_description:rma.field_rma_tag__write_date
+#: model:ir.model.fields,field_description:rma.field_rma_team__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Late RMAs"
+msgstr "RMA trễ hạn"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_incoming_local
+msgid "Local-part based incoming detection"
+msgstr "Nhận diện email đến theo phần local"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__location_id
+msgid "Location"
+msgstr "Địa điểm"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Lock"
+msgstr "Khoá"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__locked
+msgid "Locked"
+msgstr "Đã khoá"
+
+#. module: rma
+#: model_terms:ir.actions.act_window,help:rma.action_rma_finalization
+msgid ""
+"Manage RMA finalization reasons to better classify them for tracking and "
+"analysis purposes."
+msgstr "Quản lý các lý do kết thúc RMA để phân loại phục vụ theo dõi và phân tích."
+
+#. module: rma
+#: model_terms:ir.actions.act_window,help:rma.action_rma_tag
+msgid ""
+"Manage RMA tags to better classify them for tracking and analysis purposes."
+msgstr "Quản lý thẻ RMA để phân loại phục vụ theo dõi và phân tích."
+
+#. module: rma
+#: model:ir.module.category,description:rma.rma_module_category
+msgid "Manage Return Merchandise Authorizations (RMAs)."
+msgstr "Quản lý phiếu uỷ quyền trả hàng (RMA)."
+
+#. module: rma
+#: model:res.groups,name:rma.rma_group_manager
+msgid "Manager"
+msgstr "Quản lý"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__manual_finish_allowed
+msgid "Manual Finish Allowed"
+msgstr "Cho phép kết thúc thủ công"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_delivery__manual_after_receipt
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_refund__manual_after_receipt
+msgid "Manually After Receipt"
+msgstr "Thủ công sau khi nhận hàng"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_delivery__manual_on_confirm
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_receipt__manual_on_confirm
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_refund__manual_on_confirm
+msgid "Manually on Confirm"
+msgstr "Thủ công khi xác nhận"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_has_error
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi gửi tin nhắn"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_ids
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn chót hoạt động của tôi"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/controllers/main.py:0
+#: model:ir.model.fields,field_description:rma.field_rma__name
+#: model:ir.model.fields,field_description:rma.field_rma_operation__name
+#: model:ir.model.fields,field_description:rma.field_rma_team__name
+#, python-format
+msgid "Name"
+msgstr "Tên"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0 code:addons/rma/models/rma.py:0
+#: code:addons/rma/models/rma.py:0 code:addons/rma/models/rma.py:0
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+#, python-format
+msgid "New"
+msgstr "Mới"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.action_rma_form
+msgid "New RMA"
+msgstr "RMA mới"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn chót hoạt động kế tiếp"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động kế tiếp"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động kế tiếp"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "None of the selected RMAs can perform a replacement."
+msgstr "Không RMA nào đã chọn có thể thực hiện đổi hàng."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "None of the selected RMAs can perform a return."
+msgstr "Không RMA nào đã chọn có thể thực hiện trả hàng."
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__priority__0
+msgid "Normal"
+msgstr "Bình thường"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_needaction_counter
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số hành động"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__message_has_error_counter
+#: model:ir.model.fields,field_description:rma.field_rma_team__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lỗi"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__message_needaction_counter
+#: model:ir.model.fields,help:rma.field_rma_team__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số tin nhắn cần xử lý"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__message_has_error_counter
+#: model:ir.model.fields,help:rma.field_rma_team__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số tin nhắn bị lỗi gửi"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_return_picking_line__rma_operation_id
+msgid "Operation"
+msgstr "Thao tác"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.rma_operation_act_window
+#: model:ir.ui.menu,name:rma.rma_operation_menu
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Operations"
+msgstr "Thao tác"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_force_thread_id
+msgid ""
+"Optional ID of a thread (record) to which all incoming messages will be "
+"attached, even if they did not reply to it. If set, this will disable the "
+"creation of new records completely."
+msgstr "ID tuỳ chọn của luồng (bản ghi) mà mọi email đến sẽ được gắn vào, kể cả khi chúng không trả lời luồng đó. Nếu đặt, việc tạo bản ghi mới sẽ bị tắt hoàn toàn."
+
+#. module: rma
+#: model:ir.ui.menu,name:rma.rma_orders_menu
+msgid "Orders"
+msgstr "Đơn"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__picking_id
+msgid "Origin Delivery"
+msgstr "Phiếu giao gốc"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "Origin delivery"
+msgstr "Phiếu giao gốc"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__move_id
+msgid "Origin move"
+msgstr "Dịch chuyển gốc"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Other Information"
+msgstr "Thông tin khác"
+
+#. module: rma
+#: model:ir.ui.menu,name:rma.rma_dashboard_menu
+msgid "Overview"
+msgstr "Tổng quan"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_parent_model_id
+msgid "Parent Model"
+msgstr "Mô hình cha"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_parent_thread_id
+msgid "Parent Record Thread ID"
+msgstr "ID luồng của bản ghi cha"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_parent_model_id
+msgid ""
+"Parent model holding the alias. The model holding the alias reference is not"
+" necessarily the model given by alias_model_id (example: project "
+"(parent_model) and task (model))"
+msgstr "Mô hình cha giữ bí danh. Mô hình giữ tham chiếu bí danh không nhất thiết là mô hình khai báo ở alias_model_id (ví dụ: dự án (parent_model) và nhiệm vụ (model))"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Partner"
+msgstr "Đối tác"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_contact
+msgid ""
+"Policy to post a message on the document using the mailgateway.\n"
+"- everyone: everyone can post\n"
+"- partners: only authenticated partners\n"
+"- followers: only followers of the related document or members of following channels\n"
+msgstr "Quy tắc đăng tin nhắn lên tài liệu qua cổng email.\n- everyone: ai cũng đăng được\n- partners: chỉ đối tác đã xác thực\n- followers: chỉ người theo dõi tài liệu liên quan hoặc thành viên các kênh đang theo dõi\n"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__access_url
+msgid "Portal Access URL"
+msgstr "Đường dẫn truy cập cổng thông tin"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Preview"
+msgstr "Xem trước"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__priority
+msgid "Priority"
+msgstr "Mức ưu tiên"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma_operation.py:0
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+#, python-format
+msgid "Processed"
+msgstr "Đã xử lý"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__procurement_group_id
+msgid "Procurement group"
+msgstr "Nhóm cung ứng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__product_id
+#: model_terms:ir.ui.view,arch_db:rma.portal_my_rmas
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__product_uom_qty
+msgid "Product qty"
+msgstr "SL sản phẩm"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__return_product_id
+#: model:ir.model.fields,help:rma.field_stock_return_picking_line__return_product_id
+msgid ""
+"Product to be returned if it's different from the originally delivered item."
+msgstr "Sản phẩm sẽ trả nếu khác với sản phẩm đã giao ban đầu."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_tag__is_public
+msgid "Public Tag"
+msgstr "Thẻ công khai"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__product_uom_qty
+#: model_terms:ir.ui.view,arch_db:rma.portal_my_rmas
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/wizard/rma_delivery.py:0
+#: model:ir.model.constraint,message:rma.constraint_rma_split_wizard_check_product_uom_qty_positive
+#, python-format
+msgid "Quantity must be greater than 0."
+msgstr "Số lượng phải lớn hơn 0."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__product_uom_qty
+msgid "Quantity to extract"
+msgstr "Số lượng cần tách"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid ""
+"Quantity to extract cannot be greater than remaining delivery quantity "
+"(%(remaining_qty)s %(product_uom)s)"
+msgstr "Số lượng cần tách không được lớn hơn số lượng giao còn lại (%(remaining_qty)s %(product_uom)s)"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_split_wizard__product_uom_qty
+msgid "Quantity to extract to a new RMA."
+msgstr "Số lượng cần tách sang một RMA mới."
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.rma_action
+#: model:ir.model,name:rma.model_rma
+#: model:ir.model.fields,field_description:rma.field_account_move_line__rma_id
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__rma_id
+#: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma
+#: model:ir.module.category,name:rma.rma_module_category
+#: model:ir.ui.menu,name:rma.rma_menu
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+#: model_terms:ir.ui.view,arch_db:rma.view_partner_form
+#: model_terms:ir.ui.view,arch_db:rma.view_picking_form
+msgid "RMA"
+msgstr "RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_my_rmas
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "RMA #"
+msgstr "RMA số"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/res_company.py:0
+#, python-format
+msgid "RMA Code"
+msgstr "Mã RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "RMA Confirmation Email"
+msgstr "Email xác nhận RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "RMA Date"
+msgstr "Ngày RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "RMA Deadline"
+msgstr "Hạn chót RMA"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_warehouse.py:0
+#, python-format
+msgid "RMA Delivery Orders"
+msgstr "Phiếu giao hàng RMA"
+
+#. module: rma
+#: model:ir.model,name:rma.model_rma_delivery_wizard
+msgid "RMA Delivery Wizard"
+msgstr "Trợ lý giao hàng RMA"
+
+#. module: rma
+#: model:mail.template,name:rma.mail_template_rma_draft_notification
+msgid "RMA Draft Notification"
+msgstr "Thông báo RMA nháp"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.view_rma_finalization_form
+msgid "RMA Finalization"
+msgstr "Kết thúc RMA"
+
+#. module: rma
+#: model:ir.model,name:rma.model_rma_finalization
+msgid "RMA Finalization Reason"
+msgstr "Lý do kết thúc RMA"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.action_rma_finalization
+#: model:ir.ui.menu,name:rma.rma_configuration_rma_finalization_menu
+#: model_terms:ir.ui.view,arch_db:rma.rma_finalization_view_search
+msgid "RMA Finalization Reasons"
+msgstr "Các lý do kết thúc RMA"
+
+#. module: rma
+#: model:ir.model,name:rma.model_rma_finalization_wizard
+msgid "RMA Finalization Wizard"
+msgstr "Trợ lý kết thúc RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_in_type_id
+msgid "RMA In Type"
+msgstr "Loại phiếu nhập RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_loc_id
+msgid "RMA Location"
+msgstr "Địa điểm RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "RMA Manual Finalization"
+msgstr "Kết thúc RMA thủ công"
+
+#. module: rma
+#: model:mail.message.subtype,name:rma.mt_rma_notification
+#: model:mail.message.subtype,name:rma.mt_rma_team_rma_notification
+#: model:mail.template,name:rma.mail_template_rma_notification
+msgid "RMA Notification"
+msgstr "Thông báo RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_rma_page
+msgid "RMA Order -"
+msgstr "Đơn RMA -"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_my_home_menu_rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_my_home_rma
+#: model_terms:ir.ui.view,arch_db:rma.portal_my_rmas
+msgid "RMA Orders"
+msgstr "Đơn RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_out_type_id
+msgid "RMA Out Type"
+msgstr "Loại phiếu xuất RMA"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.rma_dashboard_action
+msgid "RMA Overview"
+msgstr "Tổng quan RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "RMA Receipt Confirmation Email"
+msgstr "Email xác nhận nhận hàng RMA"
+
+#. module: rma
+#: model:mail.template,name:rma.mail_template_rma_receipt_notification
+msgid "RMA Receipt Notification"
+msgstr "Thông báo nhận hàng RMA"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_warehouse.py:0
+#, python-format
+msgid "RMA Receipts"
+msgstr "Phiếu nhận hàng RMA"
+
+#. module: rma
+#: model:ir.actions.report,name:rma.report_rma_action
+msgid "RMA Report"
+msgstr "Báo cáo RMA"
+
+#. module: rma
+#: model:ir.model,name:rma.model_rma_split_wizard
+msgid "RMA Split Wizard"
+msgstr "Trợ lý tách RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.view_rma_tag_form
+msgid "RMA Tag"
+msgstr "Thẻ RMA"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.action_rma_tag
+#: model:ir.model,name:rma.model_rma_tag
+#: model:ir.ui.menu,name:rma.rma_configuration_rma_tag_menu
+#: model_terms:ir.ui.view,arch_db:rma.rma_tag_view_search
+msgid "RMA Tags"
+msgstr "Thẻ RMA"
+
+#. module: rma
+#: model:ir.model,name:rma.model_rma_team
+#: model:ir.model.fields,field_description:rma.field_res_users__rma_team_id
+#: model:ir.ui.menu,name:rma.rma_configuration_rma_team_menu
+#: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
+msgid "RMA Team"
+msgstr "Nhóm RMA"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_res_users__rma_team_id
+msgid "RMA Team the user is member of."
+msgstr "Nhóm RMA mà người dùng là thành viên."
+
+#. module: rma
+#: model:mail.message.subtype,description:rma.mt_rma_notification
+msgid "RMA automatic customer notifications"
+msgstr "Thông báo tự động cho khách hàng về RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_partner__rma_count
+#: model:ir.model.fields,field_description:rma.field_res_users__rma_count
+#: model:ir.model.fields,field_description:rma.field_stock_picking__rma_count
+msgid "RMA count"
+msgstr "Số RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "RMA draft notification Email"
+msgstr "Email thông báo RMA nháp"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_in_route_id
+msgid "RMA in Route"
+msgstr "Tuyến nhập RMA"
+
+#. module: rma
+#: model:mail.message.subtype,description:rma.mt_rma_draft
+msgid "RMA in draft state"
+msgstr "RMA ở trạng thái nháp"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_out_replace_route_id
+msgid "RMA out Replace Route"
+msgstr "Tuyến xuất đổi hàng RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_warehouse__rma_out_route_id
+msgid "RMA out Route"
+msgstr "Tuyến xuất RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_move__rma_receiver_ids
+msgid "RMA receivers"
+msgstr "Người nhận RMA"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_stock_warehouse__rma
+msgid "RMA related products can be stored in this warehouse."
+msgstr "Hàng liên quan đến RMA có thể lưu tại kho này."
+
+#. module: rma
+#: model:ir.model,name:rma.model_rma_operation
+msgid "RMA requested operation"
+msgstr "Thao tác yêu cầu của RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_move__rma_id
+msgid "RMA return"
+msgstr "Trả hàng RMA"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.rma_team_action
+#: model:ir.model.fields,field_description:rma.field_rma__team_id
+msgid "RMA team"
+msgstr "Nhóm RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_partner__rma_ids
+#: model:ir.model.fields,field_description:rma.field_res_users__rma_ids
+#: model:ir.model.fields,field_description:rma.field_stock_move__rma_ids
+msgid "RMAs"
+msgstr "Các RMA"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "RMAs which deadline has passed"
+msgstr "RMA đã quá hạn chót"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "RMAs yet to be fully processed"
+msgstr "RMA chưa xử lý xong"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_finalization_wizard__finalization_id
+msgid "Reason"
+msgstr "Lý do"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_finalization__name
+msgid "Reason Name"
+msgstr "Tên lý do"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+#, python-format
+msgid "Receipt"
+msgstr "Phiếu nhận hàng"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__received
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Received"
+msgstr "Đã nhận"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__reception_move_id
+msgid "Reception move"
+msgstr "Dịch chuyển nhận hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__alias_force_thread_id
+msgid "Record Thread ID"
+msgstr "ID luồng bản ghi"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__origin
+msgid "Reference of the document that generated this RMA."
+msgstr "Tham chiếu chứng từ đã sinh ra RMA này."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#: model:ir.model.fields,field_description:rma.field_rma__refund_id
+#: model:rma.operation,name:rma.rma_operation_refund
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+#, python-format
+msgid "Refund"
+msgstr "Hoàn tiền"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_operation__action_create_refund
+msgid "Refund Action"
+msgstr "Thao tác hoàn tiền"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__refund_line_id
+msgid "Refund Line"
+msgstr "Chi tiết hoàn tiền"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__partner_invoice_id
+msgid "Refund address for current RMA."
+msgstr "Địa chỉ hoàn tiền cho RMA hiện tại."
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__refunded
+msgid "Refunded"
+msgstr "Đã hoàn tiền"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__remaining_qty
+msgid "Remaining delivered qty"
+msgstr "SL đã giao còn lại"
+
+#. module: rma
+#: model:rma.operation,name:rma.rma_operation_return
+msgid "Repair"
+msgstr "Sửa chữa"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma_delivery_wizard__type__replace
+#: model:rma.operation,name:rma.rma_operation_replace
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Replace"
+msgstr "Đổi hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__product_id
+msgid "Replace Product"
+msgstr "Sản phẩm đổi"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__replaced
+msgid "Replaced"
+msgstr "Đã đổi"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid ""
+"Replacement: Move <a href=\"#\" data-oe-model=\"stock.move\" data-oe-"
+"id=\"%(move_id)d\">%(move_name)s</a> (Picking <a href=\"#\" data-oe-"
+"model=\"stock.picking\" data-oe-id=\"%(picking_id)d\"> %(picking_name)s</a>)"
+" has been created."
+msgstr "Đổi hàng: Dịch chuyển <a href=\"#\" data-oe-model=\"stock.move\" data-oe-id=\"%(move_id)d\">%(move_name)s</a> (Phiếu kho <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%(picking_id)d\"> %(picking_name)s</a>) đã được tạo."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid ""
+"Replacement:<br/>Product <a href=\"#\" data-oe-model=\"product.product\" "
+"data-oe-id=\"%(id)d\">%(name)s</a><br/>Quantity %(qty)s %(uom)s<br/>This "
+"replacement did not create a new move, but one of the previously created "
+"moves was updated with this data."
+msgstr "Đổi hàng:<br/>Sản phẩm <a href=\"#\" data-oe-model=\"product.product\" data-oe-id=\"%(id)d\">%(name)s</a><br/>Số lượng %(qty)s %(uom)s<br/>Lần đổi này không tạo dịch chuyển mới, mà cập nhật dữ liệu vào một dịch chuyển đã tạo trước đó."
+
+#. module: rma
+#: model:ir.ui.menu,name:rma.rma_reporting_menu
+msgid "Reporting"
+msgstr "Báo cáo"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__operation_id
+#: model:ir.model.fields,field_description:rma.field_stock_return_picking__rma_operation_id
+#: model_terms:ir.ui.view,arch_db:rma.report_rma_document
+msgid "Requested operation"
+msgstr "Thao tác yêu cầu"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "Required field(s):%s"
+msgstr "Trường bắt buộc:%s"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__user_id
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Responsible"
+msgstr "Người phụ trách"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__activity_user_id
+msgid "Responsible User"
+msgstr "Người phụ trách"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_return_picking__location_id
+msgid "Return Location"
+msgstr "Địa điểm trả hàng"
+
+#. module: rma
+#: model:ir.model,name:rma.model_stock_return_picking
+msgid "Return Picking"
+msgstr "Phiếu trả hàng"
+
+#. module: rma
+#: model:ir.model,name:rma.model_stock_return_picking_line
+msgid "Return Picking Line"
+msgstr "Chi tiết phiếu trả hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__return_product_id
+#: model:ir.model.fields,field_description:rma.field_stock_return_picking_line__return_product_id
+msgid "Return Product"
+msgstr "Sản phẩm trả"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.rma_delivery_wizard_action
+#: model:ir.model.fields.selection,name:rma.selection__rma_delivery_wizard__type__return
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Return to customer"
+msgstr "Trả lại khách hàng"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid ""
+"Return: <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-"
+"id=\"%(id)d\">%(name)s</a> has been created."
+msgstr "Trả hàng: <a href=\"#\" data-oe-model=\"stock.picking\" data-oe-id=\"%(id)d\">%(name)s</a> đã được tạo."
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__returned
+msgid "Returned"
+msgstr "Đã trả"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/wizard/stock_picking_return.py:0
+#, python-format
+msgid "Returned Picking"
+msgstr "Phiếu đã trả"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_tag__rma_ids
+msgid "Rma"
+msgstr "RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__rma_count
+msgid "Rma Count"
+msgstr "Số RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_return_picking__rma_location_ids
+msgid "Rma Location"
+msgstr "Địa điểm RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__scheduled_date
+msgid "Scheduled Date"
+msgstr "Ngày dự kiến"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__access_token
+msgid "Security Token"
+msgstr "Mã bảo mật"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_company__send_rma_confirmation
+#: model:ir.model.fields,field_description:rma.field_res_config_settings__send_rma_confirmation
+msgid "Send RMA Confirmation"
+msgstr "Gửi xác nhận RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_company__send_rma_receipt_confirmation
+#: model:ir.model.fields,field_description:rma.field_res_config_settings__send_rma_receipt_confirmation
+msgid "Send RMA Receipt Confirmation"
+msgstr "Gửi xác nhận nhận hàng RMA"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_res_company__send_rma_draft_confirmation
+#: model:ir.model.fields,field_description:rma.field_res_config_settings__send_rma_draft_confirmation
+msgid "Send RMA draft Confirmation"
+msgstr "Gửi xác nhận RMA nháp"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Send by Email"
+msgstr "Gửi qua email"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Send by Mail"
+msgstr "Gửi qua bưu điện"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__sent
+msgid "Sent"
+msgstr "Đã gửi"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__sequence
+msgid "Sequence"
+msgstr "Thứ tự"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_warehouse.py:0
+#, python-format
+msgid "Sequence RMA in"
+msgstr "Trình tự RMA nhập"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_warehouse.py:0
+#, python-format
+msgid "Sequence RMA out"
+msgstr "Trình tự RMA xuất"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Set to draft"
+msgstr "Đặt về nháp"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.action_rma_config_settings
+#: model:ir.ui.menu,name:rma.menu_rma_general_settings
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_form_view
+msgid "Settings"
+msgstr "Thiết lập"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Share"
+msgstr "Chia sẻ"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__partner_shipping_id
+msgid "Shipping Address"
+msgstr "Địa chỉ giao hàng"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__partner_shipping_id
+msgid "Shipping address for current RMA."
+msgstr "Địa chỉ giao hàng cho RMA hiện tại."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__show_create_receipt
+msgid "Show Create Receipt Button"
+msgstr "Hiện nút tạo phiếu nhận"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__show_create_return
+msgid "Show Create Return Button"
+msgstr "Hiện nút tạo phiếu trả"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__show_create_refund
+msgid "Show Create refund Button"
+msgstr "Hiện nút tạo hoàn tiền"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__show_create_replace
+msgid "Show Create replace Button"
+msgstr "Hiện nút tạo đổi hàng"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__origin
+msgid "Source Document"
+msgstr "Chứng từ gốc"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_split_wizard_view_form2
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Split"
+msgstr "Tách"
+
+#. module: rma
+#: model:ir.actions.act_window,name:rma.rma_split_wizard_action
+msgid "Split RMA"
+msgstr "Tách RMA"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid ""
+"Split: <a href=\"#\" data-oe-model=\"rma\" data-oe-"
+"id=\"%(id)d\">%(name)s</a> has been created."
+msgstr "Tách: <a href=\"#\" data-oe-model=\"rma\" data-oe-id=\"%(id)d\">%(name)s</a> đã được tạo."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__state
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/controllers/main.py:0
+#: model_terms:ir.ui.view,arch_db:rma.portal_my_rmas
+#, python-format
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Trạng thái dựa trên hoạt động\nQuá hạn: Đã qua ngày đến hạn\nHôm nay: Hoạt động diễn ra hôm nay\nĐã lên kế hoạch: Hoạt động trong tương lai."
+
+#. module: rma
+#: model:ir.model,name:rma.model_stock_move
+msgid "Stock Move"
+msgstr "Dịch chuyển kho"
+
+#. module: rma
+#: model:ir.model,name:rma.model_stock_rule
+msgid "Stock Rule"
+msgstr "Quy tắc kho"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_tag__name
+msgid "Tag Name"
+msgstr "Tên thẻ"
+
+#. module: rma
+#: model:ir.model.constraint,message:rma.constraint_rma_tag_name_uniq
+msgid "Tag name already exists !"
+msgstr "Tên thẻ đã tồn tại!"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__tag_ids
+msgid "Tags"
+msgstr "Thẻ"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Tags..."
+msgstr "Thẻ..."
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__user_id
+msgid "Team Leader"
+msgstr "Trưởng nhóm"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_team__member_ids
+#: model_terms:ir.ui.view,arch_db:rma.rma_team_view_form
+msgid "Team Members"
+msgstr "Thành viên nhóm"
+
+#. module: rma
+#: model:ir.model.constraint,message:rma.constraint_rma_operation_name_uniq
+msgid "That operation name already exists !"
+msgstr "Tên thao tác đó đã tồn tại!"
+
+#. module: rma
+#: model_terms:ir.actions.act_window,help:rma.rma_dashboard_action
+msgid ""
+"The RMA operation system allows you to configure each return operation\n"
+"                with specific settings that will adjust its behavior."
+msgstr "Hệ thống thao tác RMA cho phép bạn cấu hình từng thao tác trả hàng\n                với các thiết lập riêng để điều chỉnh hành vi của nó."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_tag__active
+msgid "The active field allows you to hide the category without removing it."
+msgstr "Trường Đang hoạt động cho phép ẩn danh mục mà không cần xoá."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_model_id
+msgid ""
+"The model (Odoo Document Kind) to which this alias corresponds. Any incoming"
+" email that does not reply to an existing record will cause the creation of "
+"a new record of this model (e.g. a Project Task)"
+msgstr "Mô hình (loại tài liệu Odoo) tương ứng với bí danh này. Mọi email đến mà không phải trả lời một bản ghi có sẵn sẽ tạo một bản ghi mới của mô hình này (ví dụ: Nhiệm vụ dự án)"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_team__alias_name
+msgid ""
+"The name of the email alias, e.g. 'jobs' if you want to catch emails for "
+"<jobs@example.odoo.com>"
+msgstr "Tên bí danh email, ví dụ 'jobs' nếu bạn muốn nhận email gửi tới <jobs@example.odoo.com>"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/stock_move.py:0
+#, python-format
+msgid ""
+"The quantity done for the product '%(id)s' must be equal to its initial "
+"demand because the stock move is linked to an RMA (%(name)s)."
+msgstr "Số lượng đã thực hiện cho sản phẩm '%(id)s' phải bằng nhu cầu ban đầu, vì dịch chuyển kho này gắn với một RMA (%(name)s)."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "The quantity to return is greater than remaining quantity."
+msgstr "Số lượng cần trả lớn hơn số lượng còn lại."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "The reception must be done before finishing this rma"
+msgstr "Phải hoàn tất nhận hàng trước khi kết thúc RMA này"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid ""
+"The selected operation requires a return product different from the "
+"originally delivered item. Please select the product to return."
+msgstr "Thao tác đã chọn yêu cầu trả về sản phẩm khác với sản phẩm đã giao ban đầu. Vui lòng chọn sản phẩm cần trả."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma_tag__is_public
+msgid "The tag is visible in the portal view"
+msgstr "Thẻ này hiển thị trên cổng thông tin"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/account_move.py:0
+#, python-format
+msgid ""
+"There is at least one invoice lines whose quantity is less than the quantity"
+" specified in its linked RMA."
+msgstr "Có ít nhất một dòng hoá đơn với số lượng nhỏ hơn số lượng ghi trong RMA liên kết."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "This RMA cannot be split."
+msgstr "Không thể tách RMA này."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "This RMA cannot perform a replacement."
+msgstr "RMA này không thể thực hiện đổi hàng."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "This RMA cannot perform a return."
+msgstr "RMA này không thể thực hiện trả hàng."
+
+#. module: rma
+#: model:ir.actions.server,name:rma.rma_refund_action_server
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "To Refund"
+msgstr "Cần hoàn tiền"
+
+#. module: rma
+#: model:ir.model,name:rma.model_stock_picking
+msgid "Transfer"
+msgstr "Điều chuyển"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__type
+msgid "Type"
+msgstr "Loại"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_stock_return_picking__picking_type_code
+msgid "Type of Operation"
+msgstr "Loại thao tác"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ trên bản ghi."
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Unassigned RMAs"
+msgstr "RMA chưa giao"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__product_uom
+#: model:ir.model.fields,field_description:rma.field_rma_split_wizard__product_uom
+msgid "Unit of measure"
+msgstr "Đơn vị tính"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_form
+msgid "Unlock"
+msgstr "Mở khoá"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_view_search
+msgid "Unresolved RMAs"
+msgstr "RMA chưa giải quyết"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__product_uom
+msgid "UoM"
+msgstr "ĐVT"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma_operation__action_create_refund__update_quantity
+msgid "Update Quantities"
+msgstr "Cập nhật số lượng"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__priority__1
+msgid "Urgent"
+msgstr "Khẩn cấp"
+
+#. module: rma
+#: model:ir.model,name:rma.model_res_users
+msgid "User"
+msgstr "Người dùng"
+
+#. module: rma
+#: model:res.groups,name:rma.rma_group_user_all
+msgid "User: All Documents"
+msgstr "Người dùng: Tất cả chứng từ"
+
+#. module: rma
+#: model:res.groups,name:rma.rma_group_user_own
+msgid "User: Own Documents Only"
+msgstr "Người dùng: Chỉ chứng từ của mình"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "Values set here are company-specific."
+msgstr "Giá trị đặt ở đây áp dụng riêng cho từng công ty."
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.rma_operation_kanban
+msgid "View"
+msgstr "Xem"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__waiting_replacement
+msgid "Waiting for replacement"
+msgstr "Chờ đổi hàng"
+
+#. module: rma
+#: model:ir.model.fields.selection,name:rma.selection__rma__state__waiting_return
+msgid "Waiting for return"
+msgstr "Chờ trả hàng"
+
+#. module: rma
+#: model:ir.model,name:rma.model_stock_warehouse
+#: model:ir.model.fields,field_description:rma.field_rma__warehouse_id
+#: model:ir.model.fields,field_description:rma.field_rma_delivery_wizard__warehouse_id
+msgid "Warehouse"
+msgstr "Kho"
+
+#. module: rma
+#: model:ir.model.fields,field_description:rma.field_rma__website_message_ids
+#: model:ir.model.fields,field_description:rma.field_rma_team__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn website"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_rma__website_message_ids
+#: model:ir.model.fields,help:rma.field_rma_team__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử trao đổi qua website"
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_res_company__send_rma_draft_confirmation
+#: model:ir.model.fields,help:rma.field_res_config_settings__send_rma_draft_confirmation
+msgid "When a customer places an RMA, send a notification with it"
+msgstr "Khi khách hàng tạo RMA, gửi kèm một thông báo"
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid ""
+"When customers themselves place an RMA from the portal, send an automatic "
+"notification acknowleging it."
+msgstr "Khi khách hàng tự tạo RMA từ cổng thông tin, gửi thông báo tự động xác nhận đã tiếp nhận."
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid "When the RMA is confirmed, send an automatic information email."
+msgstr "Khi RMA được xác nhận, gửi email thông tin tự động."
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid ""
+"When the RMA is receive, allow to finsish it manually choosing a "
+"finalization reason."
+msgstr "Khi đã nhận hàng RMA, cho phép kết thúc thủ công bằng cách chọn lý do."
+
+#. module: rma
+#: model_terms:ir.ui.view,arch_db:rma.res_config_settings_view_form
+msgid ""
+"When the RMA products are received, send an automatic information email."
+msgstr "Khi nhận được hàng RMA, gửi email thông tin tự động."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_res_company__send_rma_receipt_confirmation
+#: model:ir.model.fields,help:rma.field_res_config_settings__send_rma_receipt_confirmation
+msgid ""
+"When the RMA receipt is confirmed, send a confirmation email to the "
+"customer."
+msgstr "Khi phiếu nhận hàng RMA được xác nhận, gửi email xác nhận cho khách hàng."
+
+#. module: rma
+#: model:ir.model.fields,help:rma.field_res_company__send_rma_confirmation
+#: model:ir.model.fields,help:rma.field_res_config_settings__send_rma_confirmation
+msgid ""
+"When the delivery is confirmed, send a confirmation email to the customer."
+msgstr "Khi phiếu giao hàng được xác nhận, gửi email xác nhận cho khách hàng."
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/models/rma.py:0
+#, python-format
+msgid "You cannot delete RMAs that are not in draft state"
+msgstr "Không thể xoá RMA không ở trạng thái nháp"
+
+#. module: rma
+#. odoo-python
+#: code:addons/rma/wizard/stock_picking_return.py:0
+#, python-format
+msgid ""
+"You must specify the 'Customer' in the 'Stock Picking' from which RMAs will "
+"be created"
+msgstr "Bạn phải chỉ định 'Khách hàng' trên 'Phiếu kho' dùng để tạo RMA"
+
+#. module: rma
+#: model:res.groups,comment:rma.rma_group_user_all
+msgid ""
+"the user will have access to all records of everyone in the RMA application."
+msgstr "người dùng sẽ truy cập được mọi bản ghi của tất cả mọi người trong ứng dụng RMA."
+
+#. module: rma
+#: model:res.groups,comment:rma.rma_group_user_own
+msgid "the user will have access to his own data in the RMA application."
+msgstr "người dùng chỉ truy cập được dữ liệu của chính mình trong ứng dụng RMA."
+
+#. module: rma
+#: model:res.groups,comment:rma.rma_group_manager
+msgid ""
+"the user will have an access to the RMA configuration as well as statistic "
+"reports."
+msgstr "người dùng sẽ truy cập được phần cấu hình RMA và các báo cáo thống kê."
+
+#. module: rma
+#: model:mail.template,subject:rma.mail_template_rma_notification
+msgid "{{object.company_id.name}} RMA (Ref {{object.name or 'n/a' }})"
+msgstr "{{object.company_id.name}} RMA (Ref {{object.name or 'n/a' }})"
+
+#. module: rma
+#: model:mail.template,subject:rma.mail_template_rma_receipt_notification
+msgid ""
+"{{object.company_id.name}} RMA (Ref {{object.name or 'n/a' }}) products "
+"received"
+msgstr "{{object.company_id.name}} RMA (Ref {{object.name or 'n/a' }}) đã nhận hàng"
+
+#. module: rma
+#: model:mail.template,subject:rma.mail_template_rma_draft_notification
+msgid ""
+"{{object.company_id.name}} Your RMA has been succesfully created (Ref "
+"{{object.name or 'n/a' }})"
+msgstr "{{object.company_id.name}} RMA của bạn đã được tạo thành công (Ref {{object.name or 'n/a' }})"
